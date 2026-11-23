@@ -1,0 +1,26 @@
+{
+	"name": "arcade-api",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "node --watch --env-file=.env src/index.js",
+		"test": "node --test test/*.test.js"
+	},
+	"dependencies": {
+		"@hono/node-server": "^2.1.8",
+		"@hono/zod-validator": "^0.9.1",
+		"@xiuxiuy/arcade-core": "^0.2.0",
+		"bcrypt": "^6.0.0",
+		"hono": "^4.13.18",
+		"mongodb": "^7.9.0",
+		"zod": "^4.6.7"
+	},
+	"devDependencies": {
+		"mongodb-memory-server": "^11.3.0"
+	}
+}
